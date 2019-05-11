@@ -20,7 +20,7 @@ section {
   font-family: 'Open Sans';
   color:#245199;
   font-weight: 400;
-  width:280px;
+  width:1000px;
   margin:10px;
   display:inline-block;
 }
@@ -157,7 +157,8 @@ a:hover {
 }
 .progress__count {
   font-family: 'Open Sans', Arial, verdana;
-  font-size: .9em;
+  font-size: 1.9em;
+  color: rgb(153, 152, 152);
 }
 .progress__reset {
   font-family: inherit;
@@ -218,19 +219,31 @@ a:hover {
   
 }
 
+.main {
+  width:100%;
+  max-width: 1300px;
+  margin:0 auto;
+}
+
 .right{
-  float:right;
-  width:1000px;
+  float:left;
+  width:800px;
   height:100vh;
   margin:100px 0 0 0;
+  color:#aaa;
 }
+
+.frameClass {
+  width:100%;
+}
+
 
 .container {
   float:left;
   /* background:#aaa; */
   /* display: flex; */
   width: 400px;
-  height:50vh;
+  max-height:100vh;
   /* margin: 0 auto; */
   /* flex: 1; */
   /* flex-wrap: wrap; */
