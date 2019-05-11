@@ -37,25 +37,6 @@ header {
   z-index: 100;
   background:#eee;
 }
-
-
-::-webkit-scrollbar {
-  width: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #ebebeb;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
-  background: #b8b8b8; 
-}
-
-
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -112,8 +93,8 @@ button:-moz-focusring {
 }
 body {
   font-family:  arial, verdana, Roboto,  sans-serif;
-  /* display: flex; */
-  /* flex-direction: column; */
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   margin: 0;
   /* letter-spacing: 0.02em; */
@@ -212,39 +193,19 @@ a:hover {
   transform-origin: left;
   background: #21acb3;
 }
-
-.container:hover, .container:focus {
-  overflow-y: auto;
-  
-}
-
-.right{
-  float:right;
-  width:1000px;
-  height:100vh;
-  margin:100px 0 0 0;
-}
-
 .container {
-  float:left;
-  /* background:#aaa; */
-  /* display: flex; */
-  width: 400px;
-  height:50vh;
-  /* margin: 0 auto; */
-  /* flex: 1; */
-  /* flex-wrap: wrap; */
-  /* justify-content: space-around; */
+  display: flex;
+  max-width: 1550px;
+  margin: 0 auto;
+  flex: 1;
+  flex-wrap: wrap;
+  justify-content: space-around;
   padding: 100px 0 0 0;
-  overflow-x:hidden; 
-  /* overflow-y:auto; */
-  overflow: hidden;
 }
 .container .checklist {
   /* min-width: 350px; */
   max-width: 350px;
   margin: 15px 15px 0;
-  margin: 0 auto;
 }
 .container .checklist .checklist-container {
   margin: 0;
@@ -253,7 +214,6 @@ a:hover {
 .checklist__title {
   font-size: 1.5em;
   font-weight: 500;
-  padding: 20px 0 0 0;
   margin: 0;
   color: #999898;
   font-family: 'Open Sans', arial;
@@ -578,10 +538,4 @@ footer span {
     widows: 3;
     page-break-after: avoid;
   }
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
 }
